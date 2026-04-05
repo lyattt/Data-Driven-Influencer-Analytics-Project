@@ -1,18 +1,44 @@
 # CS2114prj5_127
-Communication Plan: 
-	Text on imessages
-	expect a 24hr response time
-	except 4 hrs within 2 days of deadline
-Deadline Plan:
-	team deadline is 2 days before the actual deadline
-Team Pledge Document:
-	Nikhita Kuninti - 5715235271 - nikhitak@vt.edu
-	May Vo - 9802882268 - akamay219@vt.edu
-	Lyat Tedla- 7038535267 - lyatt@vt.edu
-	Riley Cho - 7035090308 - mcho2029@vt.edu
-	All of the team members agree to the following:
-		abide by university policies and procedures, including the Student Code of Conduct, Principles of Community, and the Honor Code
-		communicate regularly and show up to group meetings on time
-		familiarize myself with the Project 5 Group assignment before the mandatory synchronous group meeting scheduled during week 12
-		attend the mandatory synchronous group meeting scheduled during week 12 or forfeit the opportunity to work with a group.  Further, I acknowledge that not attending this session without being excused by an instructor will result in my being awarded a score of 0 for this activity 
-		complete agreed upon task well in advance of deadlines to assure team members of my participation and competency
+
+
+## Overview
+This project analyzes social media influencer performance by processing engagement data from CSV files. It computes and compares engagement metrics across influencers, highlighting how content performance varies based on user interaction.
+
+The program focuses on identifying trends in engagement using both traditional and reach-based metrics, providing insight into how influencers perform across different conditions.
+
+## Key Features
+- Parses influencer data from CSV files
+- Stores data using a custom singly linked list
+- Calculates engagement metrics:
+  - Traditional engagement rate = (likes + comments) / followers
+  - Reach engagement rate = (likes + comments) / views
+- Aggregates engagement rates across Q1 (January–March)
+- Sorts influencers:
+  - Alphabetically by channel name
+  - By engagement rate (highest to lowest)
+- Handles missing or undefined values (e.g., zero views)
+
+## Data Model
+- **Influencer**: stores username, channel name, country, topic, and monthly stats
+- **MonthlyStats**: tracks likes, posts, followers, comments, and views
+- **Custom Linked List**: implemented from scratch to manage influencer data
+
+## Algorithms & Concepts Used
+- Insertion sort on a custom linked list
+- Comparator-based sorting strategies
+- Data aggregation across time periods (Q1 averages)
+- File parsing and data cleaning from CSV input
+
+## My Contribution
+I contributed to the data processing and sorting logic of the system, including:
+- Implementing comparator-based sorting for engagement metrics
+- Structuring influencer data for efficient analysis
+- Supporting the calculation and comparison of engagement rates
+
+## Example Output
+The program outputs ranked influencers by engagement:
+
+
+  
+
+
